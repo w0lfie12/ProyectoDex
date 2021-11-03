@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pruebas">
         <activity
+            android:name=".PersonalInfor"
+            android:exported="false" />
+        <activity
             android:name=".ProgressBar"
             android:exported="true" />
         <activity

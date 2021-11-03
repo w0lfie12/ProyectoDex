@@ -4,9 +4,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
-import org.w3c.dom.Text;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -118,6 +115,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } else {
             return false;
         }
+    }
+    public String AlmacenarDatos(String username){
+        String[] columns = {"username"};
+        db = openDatabase();
+        String selection = "username=?";
+        String[] selectionArgs = {username};
+        //Cursor cursorName= db.rawQuery("select * from user where username =? ", null);
+        Cursor cursorName= db.rawQuery("select nombre from user where username =? ", null);
+        String nombre= String.valueOf(cursorName);
+        return nombre;
+
+
+
     }
 
 

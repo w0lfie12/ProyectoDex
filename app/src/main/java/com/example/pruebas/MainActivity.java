@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView helloUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btnBack= findViewById(R.id.btnBack);
+        Button btnInfor= findViewById(R.id.btnInfor);
+
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                                        }
                                    });
+        btnInfor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MainActivity.this, PersonalInfor.class);
+                startActivity(intent);
+            }
+        });
+
+
         Bundle extras = getIntent().getExtras();
         String username = null;
 
