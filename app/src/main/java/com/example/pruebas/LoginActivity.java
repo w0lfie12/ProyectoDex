@@ -69,13 +69,18 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent= new Intent(LoginActivity.this, ProgressBar.class);
                     String name=edtUsername.getText().toString();
                     Intent intentt=new Intent(LoginActivity.this,PersonalInfor.class);
+                    Bundle b = new Bundle();
                     intentt.putExtra("name", name);
+
                     startActivity(intentt);
+                    String text= "Bienvenido de nuevo "+ edtUsername.getText().toString();
+
+
 
 
                       //  intent.putExtra("username", edtUsername.getText().toString());
                         startActivity(intent);
-                        Toast.makeText(LoginActivity.this, "Bienvenido de nuevo" , Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this,text, Toast.LENGTH_SHORT).show();
 
                     } else {
                        edtUsername.setText(null);

@@ -121,8 +121,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db = openDatabase();
         String selection = "username=?";
         String[] selectionArgs = {username};
-        //Cursor cursorName= db.rawQuery("select * from user where username =? ", null);
-        Cursor cursorName= db.rawQuery("select nombre from user where username =? ", null);
+        Cursor cursorName= db.rawQuery("select * from user where username =? ", null);
+       // Cursor cursorName= db.rawQuery("select nombre from user where username =? ", null);
         String nombre= String.valueOf(cursorName);
         return nombre;
 
