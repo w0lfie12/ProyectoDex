@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogastos"
+    tools:context=".MasDias">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="-163dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="12dp"
+                android:text="Id departamento:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="12dp"
+                android:text="Continente:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="4dp"
+                android:text="Fecha de fin:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.569"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTicket"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/txtCiudad"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Ej:Bilbao"
+                android:inputType="textPersonName"
+                android:textColor="#F8F5F5"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/txtPais" />
+
+            <EditText
+                android:id="@+id/txtContinente"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Ej:Europa"
+                android:inputType="textPersonName"
+                android:shadowColor="#FDF9F9"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.246"
+                app:layout_constraintStart_toEndOf="@+id/textView28"
+                app:layout_constraintTop_toBottomOf="@+id/txtFfin" />
+
+            <EditText
+                android:id="@+id/txtFinicio"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Formato: dd/mm/aa"
+                android:inputType="date"
+                android:textColor="#FAF7F7"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.231"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/txtIdProyecto" />
+
+            <Button
+                android:id="@+id/btnTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Adjuntar Ticket"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ImgTicket"
+                app:layout_constraintTop_toBottomOf="@+id/txtDieta" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:text="País:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="12dp"
+                android:text="Ciudad:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            <EditText
+                android:id="@+id/txtDieta"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Ej:10.5"
+                android:inputType="numberDecimal"
+                android:textColor="#FAF6F6"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/textView33"
+                app:layout_constraintTop_toBottomOf="@+id/txtCiudad" />
+
+            <EditText
+                android:id="@+id/txtFfin"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                android:textColor="#F8F6F6"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.246"
+                app:layout_constraintStart_toEndOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/txtFinicio"
+                tools:ignore="Deprecated" />
+
+            <EditText
+                android:id="@+id/txtPais"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Ej:España"
+                android:inputType="textPersonName"
+                android:textColor="#F8F5F5"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.231"
+                app:layout_constraintStart_toEndOf="@+id/textView29"
+                app:layout_constraintTop_toBottomOf="@+id/txtContinente" />
+
+            <EditText
+                android:id="@+id/txtIdDepartamento"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="52dp"
+                android:ems="10"
+                android:hint="Ej:1"
+                android:inputType="number"
+                android:textColor="#F8F8F8"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/txtIdUsuario" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="12dp"
+                android:text="Id proyecto:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="12dp"
+                android:text="Fecha de inicio:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            <ImageView
+                android:id="@+id/ImgTicket"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33"
+                app:srcCompat="@android:drawable/dark_header" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Dieta:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <EditText
+                android:id="@+id/txtIdProyecto"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Ej:5"
+                android:inputType="number"
+                android:textColor="#F4EFEF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.231"
+                app:layout_constraintStart_toEndOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/txtIdDepartamento" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gasto mayor a 4 dias:"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="150dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="36dp"
+                android:text="Id Usuario:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <EditText
+                android:id="@+id/txtIdUsuario"
+                android:layout_width="132dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Ej:1"
+                android:inputType="number"
+                android:textColor="#FDFAFA"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintStart_toEndOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

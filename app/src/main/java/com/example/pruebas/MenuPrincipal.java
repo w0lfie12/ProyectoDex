@@ -5,9 +5,11 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
 
+import com.example.pruebas.viewModel.Userviewmodel;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -19,32 +21,49 @@ import com.example.pruebas.databinding.ActivityMenuPrincipalBinding;
 
 public class MenuPrincipal extends AppCompatActivity {
 
+
+
+
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMenuPrincipalBinding binding;
+    User user;
+    Empleado empleado;
+TextView name, textViewCorreo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*Set Username on the menu header*/
+        String variables;
+        Bundle bundle= getIntent().getExtras();
+        user= (User)bundle.getSerializable("com.example.pruebas.User");
+        name= findViewById(R.id.name);
+//        textViewCorreo.findViewById(R.id.textViewCorreo);
+        Bundle bundleEmpleado= getIntent().getExtras();
+        empleado=(Empleado) bundleEmpleado.getSerializable("com.example.pruebas.Empleado");
+       // String userId= user.getIdUser().toString();
+       //Bundle b = getIntent().getExtras();
+        /*Viewmodels*/
 
-       // Bundle b = getIntent().getExtras();
-       // String Nombre = b.getString("name");
-       // System.out.println(Nombre);
-        //TextView name= findViewById(R.id.name);
-        //name.setText("prueba");
-        /*-----------------------------*/
+        Userviewmodel umodel = new ViewModelProvider(this).get(Userviewmodel.class);
+        umodel.setUser(user);
+
+        Userviewmodel emodel = new ViewModelProvider(this).get(Userviewmodel.class);
+
+        emodel.setEmpleado(empleado);
+
+
+        /*--------------*/
+        /*por que da error??*/
+        //textViewCorreo.setText(emodel.getEmpleado().getValue().getCorreo());
+        // name.setText(emodel.getEmpleado().getValue().getNombre() + emodel.getEmpleado().getValue().getApellido1());
+        // /*------------------------*/
 
         binding = ActivityMenuPrincipalBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMenuPrincipal.toolbar);
-        binding.appBarMenuPrincipal.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -71,4 +90,5 @@ public class MenuPrincipal extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }

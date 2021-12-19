@@ -129,26 +129,26 @@ public class Tarjetas extends Fragment {
                         curCard.setTextColor(Color.WHITE);
                         cardNumber.setText(card_europe);
                         imageView2.setImageResource(R.drawable.international);
-                        curCard.setText("EUROPE");
+                        curCard.setText("INTERNATIONAL");
 
                         Switch sw = view.findViewById(R.id.switch1);
                         sw.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 if(sw.isChecked()){
-                                    lastActive.setText(lastactive_int);
-
-                                    cardNumber.setText(card_international);
-
-                                    curCard.setText(current_card);
-                                    imageView2.setImageResource(R.drawable.international);
-
-                                }else{
                                     lastActive.setText(lastactive_eur);
 
                                     cardNumber.setText(card_europe);
                                     imageView2.setImageResource(R.drawable.international);
                                     curCard.setText("EUROPE");
+
+                                }else{
+                                    lastActive.setText(lastactive_int);
+
+                                    cardNumber.setText(card_international);
+
+                                    curCard.setText("INTERNATIONAL");
+                                    imageView2.setImageResource(R.drawable.international);
 
                                 }
 

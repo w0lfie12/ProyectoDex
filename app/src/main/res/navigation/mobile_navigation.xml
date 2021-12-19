@@ -8,8 +8,18 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.pruebas.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Fichar"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_gastos"
+            app:destination="@id/gastos" />
+        <action
+            android:id="@+id/action_nav_home_to_tarjetas"
+            app:destination="@id/tarjetas" />
+        <action
+            android:id="@+id/action_nav_home_to_personalInfor2"
+            app:destination="@id/personalInfor2" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -28,8 +38,39 @@
         android:label="Tarjetas"
         tools:layout="@layout/fragment_tarjetas" />
     <fragment
-        android:id="@+id/personalInfor"
-        android:name="com.example.pruebas.ui.InformacionPersonal.personalInfor"
+        android:id="@+id/gastos"
+        android:name="com.example.pruebas.ui.Gastos.Gastos"
+        android:label="Gastos"
+        tools:layout="@layout/fragment_gastos" >
+        <action
+            android:id="@+id/action_gastos_to_nuevoGasto2"
+            app:destination="@id/nuevoGasto" />
+        <action
+            android:id="@+id/action_gastos_to_verGastos2"
+            app:destination="@id/verGastos" />
+    </fragment>
+    <fragment
+        android:id="@+id/nuevoGasto"
+        android:name="com.example.pruebas.ui.Gastos.NuevoGasto"
+        android:label="fragment_nuevo_gasto"
+        tools:layout="@layout/fragment_nuevo_gasto" />
+    <fragment
+        android:id="@+id/verGastos"
+        android:name="com.example.pruebas.ui.Gastos.VerGastos"
+        android:label="fragment_ver_gastos"
+        tools:layout="@layout/fragment_ver_gastos" />
+    <fragment
+        android:id="@+id/personalInfor2"
+        android:name="com.example.pruebas.ui.PersonalInfor.personalInfor"
         android:label="fragment_personal_infor"
-        tools:layout="@layout/fragment_personal_infor" />
+        tools:layout="@layout/fragment_personal_infor" >
+        <action
+            android:id="@+id/action_personalInfor2_to_agregarRegistroActivity"
+            app:destination="@id/agregarRegistroActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/agregarRegistroActivity"
+        android:name="com.example.pruebas.AgregarRegistroActivity"
+        android:label="Cambiar foto de Perfil"
+        tools:layout="@layout/activity_agregar_registro" />
 </navigation>

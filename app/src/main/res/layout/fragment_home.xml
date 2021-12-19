@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondofichar"
+    android:clickable="false"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="394dp"
         android:layout_height="96dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="52dp"
         android:gravity="center"
         android:text="Control de Horario"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#EDE3E3"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,45 +25,51 @@
 
     <Button
         android:id="@+id/btnTrabajar"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trabajar"
+        android:elegantTextHeight="true"
+        android:stateListAnimator="@anim/nav_default_enter_anim"
+        android:text="Empezar Turno."
+        app:icon="@drawable/work"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <TextView
         android:id="@+id/txtHoraEntrada"
         android:layout_width="154dp"
         android:layout_height="21dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="88dp"
-        android:text="TextView"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#FAF7F7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toEndOf="@+id/txtEntrada"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/date" />
 
     <TextView
         android:id="@+id/txtEntrada"
         android:layout_width="108dp"
         android:layout_height="21dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
         android:text="Hora de entrada:"
+        android:textColor="#FBFBFB"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/fecha" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="108dp"
         android:layout_height="21dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="32dp"
         android:text="Tempo Restante:"
+        android:textColor="#F8F7F7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/salida" />
 
@@ -70,6 +79,7 @@
         android:layout_height="21dp"
         android:layout_marginTop="32dp"
         android:text="07:59:59"
+        android:textColor="#F8F0F0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -79,7 +89,7 @@
         android:id="@+id/btnNoTrabajar"
         android:layout_width="115dp"
         android:layout_height="55dp"
-        android:text="Dejar de trabajar"
+        android:text="Terminar Turno"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,9 +102,11 @@
         android:id="@+id/salida"
         android:layout_width="108dp"
         android:layout_height="21dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
         android:text="Hora de salida:"
+        android:textColor="#F3EFEF"
+        android:textIsSelectable="false"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEntrada" />
@@ -103,12 +115,63 @@
         android:id="@+id/txtSalida"
         android:layout_width="154dp"
         android:layout_height="21dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="40dp"
         android:text="TextView"
+        android:textColor="#ECE4E4"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toEndOf="@+id/salida"
         app:layout_constraintTop_toBottomOf="@+id/txtHoraEntrada" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="ID del proyecto:"
+        android:textColor="#F8F7F7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/edtIdProyecto"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestante"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Fecha:"
+        android:textColor="#F8F5F5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="154dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toEndOf="@+id/fecha"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

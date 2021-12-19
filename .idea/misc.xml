@@ -17,21 +17,48 @@
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/app/src/main/res/layout/nav_header_informacion.xml" value="0.1" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/app/src/main/res/menu/informacion.xml" value="0.1" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/drawable/bordes_redondeados.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/drawable/side_nav_bar.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_login.xml" value="0.2154696132596685" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_main.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_menu_principal.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_personal_infor.xml" value="0.22" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_principal.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_progress_bar.xml" value="0.1547008547008547" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/app_bar_menu_principal.xml" value="0.1675213675213675" />
-        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/content_menu_principal.xml" value="0.14444444444444443" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/content_menu_principal.xml" value="0.25" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_gallery.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_gastos.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_personal_infor.xml" value="0.1" />
-        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_tarjetas.xml" value="0.33" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_nuevo_gasto.xml" value="0.1" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_personal_infor.xml" value="0.21367521367521367" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_slideshow.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_tarjetas.xml" value="0.23963730569948186" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_ver_gastos.xml" value="0.1" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/nav_header_menu_principal.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/personal_infor_fragment.xml" value="0.25" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/CIBER/Desktop/proyect-master/proyect-master/proyect-master/app/src/main/res/menu/menu_principal.xml" value="0.1675213675213675" />
         <entry key="..\:/android/Pruebas/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/android/Pruebas/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_Foto_Perfil.xml" value="0.4547008547008547" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_agregar_registro.xml" value="0.27136752136752135" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_mas_dias.xml" value="0.4547008547008547" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_menos_dias.xml" value="0.5" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_menu_principal.xml" value="0.36196581196581196" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_nuevo_gasto.xml" value="0.4547008547008547" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_principal.xml" value="0.4547008547008547" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/activity_ver_gastos.xml" value="0.27136752136752135" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/app_bar_menu_principal.xml" value="0.36196581196581196" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/content_menu_principal.xml" value="0.36196581196581196" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_home.xml" value="0.36196581196581196" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_personal_infor.xml" value="0.4547008547008547" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_slideshow.xml" value="0.36196581196581196" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_tarjetas.xml" value="0.36196581196581196" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/fragment_ver_gastos.xml" value="0.4547008547008547" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/layout/nav_header_menu_principal.xml" value="0.27136752136752135" />
+        <entry key="..\:/escritorio/reto/proyect-master/proyect-master/proyect-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.46794871794871795" />
       </map>
     </option>
   </component>
@@ -43,5 +70,12 @@
   </component>
   <component name="SuppressKotlinCodeStyleNotification">
     <option name="disableForAll" value="true" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4547008547008547" />
+      </ProjectState>
+    </option>
   </component>
 </project>

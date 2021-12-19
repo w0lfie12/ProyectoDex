@@ -6,15 +6,20 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@drawable/fichaje"
+            android:title="Fichar" />
         <item
             android:id="@+id/tarjetas"
             android:icon="@drawable/creditcard"
             android:title="Tarjetas" />
         <item
-            android:id="@+id/personalInfor"
+            android:id="@+id/personalInfor2"
             android:icon="@drawable/pngwing"
             android:title="Información Personal" />
+        <item
+            android:id="@+id/gastos"
+            android:icon="@drawable/money"
+            android:title="Gastos" />
+
     </group>
 </menu>
